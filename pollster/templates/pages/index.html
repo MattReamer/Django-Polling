@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card text-center">
+    <div class="card-body">
+        <h1>Welcome to Pollster</h1>
+        <p>This is an example Djando polling app</p>
+        <a class="btn btn-dark" href="{% url 'polls:index' %}">View Available Polls</a>
+        <a class="btn btn-dark" href="/admin">Goto Admin Page</a>
+    </div>
+</div>
+
+{% endblock %}
